@@ -12,4 +12,9 @@ public class KafkaTopicConfig {
     public NewTopic ninvitTopic(){
         return TopicBuilder.name("ninvit").build();
     }
+
+    @Bean
+    public NewTopic ninvitJsonTopic(){
+        return TopicBuilder.name("ninvit_json").build();
+    }
 }
